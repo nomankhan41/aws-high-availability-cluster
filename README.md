@@ -7,7 +7,7 @@
 
 ### 🚀 Project Demo
 *(Traffic automatically rerouting between Zone A and Zone B upon page refresh)*
-![Failover Demo]()
+![Failover Demo](demo.gif)
 
 🔹 **[Watch the Full Technical Walkthrough (Loom Video)](https://www.loom.com/share/66298914a17c4b99bd94d6472b49876d)**
 
