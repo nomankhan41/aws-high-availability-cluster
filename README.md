@@ -16,11 +16,10 @@
 ### 🏗 Architecture Design
 This project implements a "Multi-AZ" architecture. If one physical data center (Availability Zone) goes offline, the Load Balancer instantly shifts traffic to the backup zone, ensuring 0% downtime.
 
-```mermaid
 graph TD
     user((User)) -->|HTTP Traffic| alb[Application Load Balancer]
-    alb -->|Zone A| master[Web-Master (Blue)]
-    alb -->|Zone B| slave[Web-Slave (Red)]
+    alb -->|Zone A| master["Web-Master (Blue)"]
+    alb -->|Zone B| slave["Web-Slave (Red)"]
 
     subgraph AWS Cloud
         subgraph VPC
@@ -29,6 +28,7 @@ graph TD
             slave
         end
     end
+    
     style master fill:#0073bb,color:white
     style slave fill:#d13212,color:white
 ```
